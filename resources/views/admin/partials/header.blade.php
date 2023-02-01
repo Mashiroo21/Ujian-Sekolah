@@ -56,10 +56,8 @@
         </li>
     </ul>
 
-    {{-- notification and user --}}
     <div class="navbar-collapse collapse">
         <ul class="navbar-nav navbar-align">
-            {{-- Notification --}}
             <li class="nav-item dropdown">
                 <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
                     <div class="position-relative">
@@ -125,7 +123,6 @@
                     </div>
                 </div>
             </li>
-            {{-- Message --}}
             <li class="nav-item dropdown">
                 <a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-bs-toggle="dropdown">
                     <div class="position-relative">
@@ -193,7 +190,29 @@
                     </div>
                 </div>
             </li>
-            {{-- Fullscreen togle --}}
+            <li class="nav-item dropdown">
+                <a class="nav-flag dropdown-toggle" href="#" id="languageDropdown" data-bs-toggle="dropdown">
+                    <img src="img/flags/us.png" alt="English" />
+                </a>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                    <a class="dropdown-item" href="#">
+                        <img src="img/flags/us.png" alt="English" width="20" class="align-middle me-1" />
+                        <span class="align-middle">English</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <img src="img/flags/es.png" alt="Spanish" width="20" class="align-middle me-1" />
+                        <span class="align-middle">Spanish</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <img src="img/flags/ru.png" alt="Russian" width="20" class="align-middle me-1" />
+                        <span class="align-middle">Russian</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <img src="img/flags/de.png" alt="German" width="20" class="align-middle me-1" />
+                        <span class="align-middle">German</span>
+                    </a>
+                </div>
+            </li>
             <li class="nav-item">
                 <a class="nav-icon js-fullscreen d-none d-lg-block" href="#">
                     <div class="position-relative">
@@ -201,7 +220,6 @@
                     </div>
                 </a>
             </li>
-            {{-- Profile --}}
             <li class="nav-item dropdown">
                 <a class="nav-icon pe-md-0 dropdown-toggle" href="#" data-bs-toggle="dropdown">
                     <img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded" alt="Charles Hall" />

@@ -44,17 +44,22 @@
             <li class="sidebar-header">
                 Pages
             </li>
-
-            {{-- Dashboard --}}
             <li class="sidebar-item active">
-                <a data-bs-target="#dashboards"  class="sidebar-link">
+                <a data-bs-target="#dashboards" data-bs-toggle="collapse" class="sidebar-link">
                     <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboards</span>
                 </a>
+                <ul id="dashboards" class="sidebar-dropdown list-unstyled collapse show" data-bs-parent="#sidebar">
+                    <li class="sidebar-item active"><a class="sidebar-link" href="index.html">Analytics</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="dashboard-ecommerce.html">E-Commerce <span
+                                class="sidebar-badge badge bg-primary">Pro</span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="dashboard-crypto.html">Crypto <span
+                                class="sidebar-badge badge bg-primary">Pro</span></a></li>
+                </ul>
             </li>
 
-            {{-- <li class="sidebar-item">
+            <li class="sidebar-item">
                 <a data-bs-target="#pages" data-bs-toggle="collapse" class="sidebar-link collapsed">
-                    <i class="align-middle" data-feather="layout"></i> <span class="align-middle">Data Siswa</span>
+                    <i class="align-middle" data-feather="layout"></i> <span class="align-middle">Pages</span>
                 </a>
                 <ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item"><a class="sidebar-link" href="pages-settings.html">Settings</a></li>
@@ -68,42 +73,37 @@
                                 class="sidebar-badge badge bg-primary">Pro</span></a></li>
                     <li class="sidebar-item"><a class="sidebar-link" href="pages-blank.html">Blank Page</a></li>
                 </ul>
-            </li> --}}
+            </li>
 
-            {{-- Data Siswa --}}
             <li class="sidebar-item">
                 <a class="sidebar-link" href="pages-profile.html">
-                    <i class="align-middle" data-feather="user"></i> <span class="align-middle">Data Siswa</span>
+                    <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
                 </a>
             </li>
 
-            {{-- Data Guru --}}
             <li class="sidebar-item">
                 <a class="sidebar-link" href="pages-invoice.html">
-                    <i class="align-middle" data-feather="credit-card"></i> <span class="align-middle">Data Guru</span>
+                    <i class="align-middle" data-feather="credit-card"></i> <span class="align-middle">Invoice</span>
                 </a>
             </li>
 
-            {{-- Data Kelas --}}
             <li class="sidebar-item">
                 <a class="sidebar-link" href="pages-tasks.html">
-                    <i class="align-middle" data-feather="list"></i> <span class="align-middle">Kelas</span>
+                    <i class="align-middle" data-feather="list"></i> <span class="align-middle">Tasks</span>
                     <span class="sidebar-badge badge bg-primary">Pro</span>
                 </a>
             </li>
 
-            {{-- Data Mata Pelajaran --}}
             <li class="sidebar-item">
                 <a class="sidebar-link" href="calendar.html">
-                    <i class="align-middle" data-feather="calendar"></i> <span class="align-middle">Mata Pelajaran</span>
+                    <i class="align-middle" data-feather="calendar"></i> <span class="align-middle">Calendar</span>
                     <span class="sidebar-badge badge bg-primary">Pro</span>
                 </a>
             </li>
 
-            {{-- Data Ujian --}}
             <li class="sidebar-item">
                 <a href="#auth" data-bs-toggle="collapse" class="sidebar-link collapsed">
-                    <i class="align-middle" data-feather="users"></i> <span class="align-middle">Data Ujian</span>
+                    <i class="align-middle" data-feather="users"></i> <span class="align-middle">Auth</span>
                 </a>
                 <ul id="auth" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item"><a class="sidebar-link" href="pages-sign-in.html">Sign In</a></li>
@@ -116,7 +116,7 @@
                                 class="sidebar-badge badge bg-primary">Pro</span></a></li>
                 </ul>
             </li>
-{{-- 
+
             <li class="sidebar-header">
                 Components
             </li>
@@ -261,7 +261,7 @@
                         </ul>
                     </li>
                 </ul>
-            </li> --}}
+            </li>
         </ul>
     </div>
 </nav>
